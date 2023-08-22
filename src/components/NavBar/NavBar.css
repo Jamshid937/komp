@@ -172,6 +172,10 @@
   .nav-item__phone>a :last-child {
     display: block;
   }
+  .nav-item__phone {
+
+    gap: 0px;
+}
   .nav-item_select__bar {
     display: block;
   }
