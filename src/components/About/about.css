@@ -1,0 +1,42 @@
+.about__info > h2{
+    color: #333;
+    font-family: 'Poppins';
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.about__info > p{
+    max-width: 586px;
+    width: 100%;
+    color: #666;
+    font-family: 'Poppins';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24.5px; /* 204.167% */
+    letter-spacing: 0.5px;
+    margin-top: 37px;
+}
+.about{
+display: flex;
+gap: 12px;
+margin-top: 263px;
+}
+@media screen and (max-width:925px) {
+    .about{
+    flex-direction: column;
+    align-items: center;
+    }
+}
+@media screen and (max-width:605px) {
+    .about__img>img{
+    max-width: 550px;
+    width: 100%;
+    }
+}
+@media screen and (max-width:363px) {
+    .about__info > h2 {
+    font-size: 32px;
+    }
+}
