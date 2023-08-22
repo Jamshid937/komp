@@ -3,6 +3,7 @@
 import React from 'react'
 import { useEffect } from 'react'
 import { useState } from 'react'
+import $ from 'jquery'
 import { useTranslation } from 'react-i18next';
 import { validatePhoneContent, validatePhoneNumber, validateText } from './halper'
 import classNames from 'classnames'
@@ -31,11 +32,34 @@ function Validate() {
             return
         setFields((prev) => ({ ...prev, [e.target.name]: e.target.value }))
     }
-
+    var telegram_bot_id = "6044421804:AAHHoJoX1szgVpwZBVxVxiAH6YKtBHzlL2M";
+    var chat_id = 602198486; 
+    var  tell, message;
+    var ready = function() {
+        tell = fields.tell;
+        message = fields.text;
+        message = "\nTell: " + tell + "\nIzoh: " + message;
+    };
 
 
     var sendtelegram = function (e) {
-
+        ready();
+        var settings = {
+            "async": true,
+            "crossDomain": true,
+            "url": "https://api.telegram.org/bot" + telegram_bot_id + "/sendMessage",
+            "method": "POST",
+            "headers": {
+                "Content-Type": "application/json",
+                "cache-control": "no-cache"
+            },
+            "data": JSON.stringify({
+                "chat_id": chat_id,
+                "text": message
+            })
+        };
+        $.ajax(settings).done(function(response) {
+        });
 
 
         setFields(initialData)

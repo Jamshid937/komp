@@ -11,6 +11,7 @@ import additionalServices from '../../Imgs/additionalServices.png'
 import konstavar from '../../Imgs/konstavar.png'
 import Mask from '../../Imgs/Mask.png'
 import './Home.css'
+import Footer from '../../components/Footer'
 
 const Home = () => {
   return (
@@ -173,7 +174,7 @@ const Home = () => {
         <Container>
         <Validate/>
         </Container>
-      
+       <Footer/>
     </>
 
 

@@ -1,0 +1,114 @@
+.footer{
+ background: #000;
+ padding: 63px;
+}
+.footer__contact__card{
+display: flex;
+gap: 16px;
+margin-top: 38px;
+}
+.footer__contact__card__about{
+    color: #EAEAEA;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+}
+.footer__location>h4{
+    color: #FFF;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px; 
+}
+
+.footer__link>h4{
+    color: #FFF;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px; /* 137.5% */
+}
+.footer__link__list__item>a{
+    color: #FFF;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.footer__link__list{
+margin-top: 40px;
+
+}
+.footer__link__list__item{
+margin-top: 9px;
+}
+.footer__box{
+display: flex;
+justify-content: space-between;
+border-bottom:1px solid  #FF723A ;
+padding-bottom: 24px;
+}
+.primeTech {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 32px;
+    background: #FF723A;
+    padding: 10px 0;
+  
+    max-width: 280px;
+    width: 100%;
+}
+.primeTech>p {
+    color: #000;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.primeTech>img {
+width: 42px;
+height: 40px;
+}
+.footer__box__two{
+display: flex;
+justify-content: space-between;
+margin-top: 52px;
+}
+.footer__box__two__icons :last-child{
+margin-left: 32px;
+}
+@media screen and (max-width:827px) {
+    .footer__box{
+    flex-direction: column;
+    }
+    .footer__link>h4 {
+
+        margin-top: 30px;
+    }
+    .footer__location>h4 {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width:530px) {
+    .footer__box__two{
+    flex-direction: column;
+    gap: 46px;
+    }
+}
+@media screen and (max-width:352px) {
+    .footer__box{
+        flex-direction: column;
+        align-items: center;
+    }
+}
