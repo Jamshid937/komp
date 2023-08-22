@@ -1,8 +1,11 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next';
+
 import Container from '../../layout/Container'
 import about from '../../Imgs/about.png'
 import './about.css'
 const About = () => {
+    const { t, i18n } = useTranslation();
     return (
         <Container>
             <div className='about'>
@@ -10,15 +13,9 @@ const About = () => {
                     <img src={about} alt="" />
                 </div>
                 <div className='about__info'>
-                    <h2>Biz haqimizda</h2>
+                    <h2>{t('h2')}</h2>
                     <p>
-                        Bundan buyon «NOROV FARRUX OMONTURDIYEVICH» oilaviy
-                        korxonasi boshlig'i deb ataluvchi SOXIBA SHEXOVA BAFOYEVNA hamda
-                        ishtirokchilar deb ataluvchi SOXIBA SHEXOVA BAFOYEVNA va FARRUX
-                        NOROV OMONTURDIYEVICH bilan birgalikda O'zbekiston Respublikasining
-                        «Oilaviy tadbirkorlik to'g'risida»gi Qonuni va boshqa qonun hujjatlari asosida
-                        «NOROV FARRUX OMONTURDIYEVICH» oilaviy korxonasini (keyingi o'rinlarda «korxona» deb
-                        yuritiladi) tashkil etdilar.
+                    {t('p')}
                     </p>
                 </div>
             </div>

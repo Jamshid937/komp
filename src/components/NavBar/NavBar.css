@@ -9,7 +9,7 @@
   z-index: 20;
   background-color: #fff;
   width: 100%;
- 
+
 }
 
 .nav-container {
@@ -98,9 +98,12 @@
   align-items: center;
   gap: 32px;
 }
-.nav-item__phone>a>img{
-background-color: #FFF;
+
+.nav-item__phone>a>img {
+  width: 40px;
+  height: 40px;
 }
+
 .nav-item_select {
   width: 63.333px;
   height: 30px;
@@ -124,36 +127,71 @@ background-color: #FFF;
   flex-shrink: 0;
   border-radius: 27px;
   border: 2px solid #FF723A;
-  background: #2C50CB;
-  color: #FFF;
+  color: #FF723A;
   font-family: 'Inter';
-  font-size: 20px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  margin-right: 6px;
+  outline: none;
   display: none;
 }
-.nav-item__dropdown{
+
+.nav-item__dropdown {
   border-radius: 10px;
-background: #FFF;
-width: 167px;
-flex-shrink: 0;
-box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.10);
-display: none;
-color: #666;
-font-family: 'Poppins';
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-list-style: none;
+  background: #FFF;
+  width: 167px;
+  flex-shrink: 0;
+  box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.10);
+  display: none;
+
+}
+.nav-item__dropdown>li>a{
+  color: #666;
+  font-family: 'Poppins';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  list-style: none;
 }
 .nav-item:hover .nav-item__dropdown {
   display: block;
 }
+
+.nav-bar__last {
+  display: none;
+  list-style: none;
+}
+
+.nav-item__phone>a :last-child {
+  display: none;
+}
+
 @media only screen and (max-width: 1100px) {
+  .nav-item__phone>a :last-child {
+    display: block;
+  }
+
+  .nav-item__phone>a :first-child {
+    display: none;
+  }
+
   .navbar {
     background: #FF723A;
+  }
+
+  .nav-item:hover .nav-item__dropdown {
+    display: none;
+  }
+
+  .nav-links {
+    color: #FFF;
+  }
+
+  .nav-bar__last {
+    display: block;
   }
 
   .nav-item_select__bar {
@@ -180,12 +218,12 @@ list-style: none;
     opacity: 1;
     transition: all 0.5s ease;
 
-background: #FF723A;
+    background: #FF723A;
   }
 
   .nav-menu.active {
-   
-background: #FF723A;
+
+    background: #FF723A;
     display: flex;
     align-items: center;
     justify-content: center;

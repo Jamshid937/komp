@@ -68,10 +68,10 @@ function Validate() {
 
     }
     return (
-        <div id='form'>
+        <div id='form' >
 
-                <div className={classes['call__info']}>
-                    <h2>Buyurtma berish</h2>
+                <div className={classes['call__info']} id='boglanish'>
+                    <h2>{t('h7')}</h2>
                 </div>
                 
 
@@ -102,7 +102,7 @@ function Validate() {
                         })}
                         disabled={disablad}
                     >
-                        Buyurtma berish
+                        {t('btn')}
                     </button>
                 </form>
             </div>
