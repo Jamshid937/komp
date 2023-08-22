@@ -76,7 +76,7 @@
 
 .nav-item:hover:after {
   width: 100%;
-  background: #2C50CB;
+  background: #FF723A;
 }
 
 .nav-item.active {
@@ -129,13 +129,12 @@
   border: 2px solid #FF723A;
   color: #FF723A;
   font-family: 'Inter';
-  font-size: 14px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  margin-right: 6px;
-  outline: none;
   display: none;
+  
 }
 
 .nav-item__dropdown {
@@ -173,7 +172,9 @@
   .nav-item__phone>a :last-child {
     display: block;
   }
-
+  .nav-item_select__bar {
+    display: block;
+  }
   .nav-item__phone>a :first-child {
     display: none;
   }
@@ -194,17 +195,13 @@
     display: block;
   }
 
-  .nav-item_select__bar {
-    display: block;
-  }
+
 
   .nav-logo {
     margin: 0 auto;
   }
 
-  .nav-item_select {
-    display: none;
-  }
+
 
   .nav-menu {
     display: flex;
