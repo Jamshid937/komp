@@ -11,7 +11,13 @@
   width: 100%;
 
 }
-
+.nav-logo>img{
+width: 100px;
+height: 100px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
 .nav-container {
   display: flex;
   justify-content: space-between;
