@@ -82,7 +82,7 @@ function Validate() {
                 <form className={classes['call__input']} onSubmit={sendtelegram} >
                     <input
                         type="tel"
-                        placeholder='+998'
+                        placeholder='+998919110683'
                         onChange={handleChange}
                         value={fields.tell}
                         name='tell'
@@ -90,7 +90,7 @@ function Validate() {
                     />
                     <input
                         type="text"
-                        placeholder='F.I.SH'
+                        placeholder='OROV FARRUX OMONTURDIYEVICH'
                         onChange={handleChange}
                         value={fields.text}
                         name='text'
