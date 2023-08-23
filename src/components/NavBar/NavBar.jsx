@@ -74,18 +74,44 @@ function NavBar() {
                 {t('li11')}
               </a>
               <ul className='nav-item__dropdown'>
-                <li> <a href="#servic">{t('li16')}</a></li>
-                <li> <a href="#servic">{t('li17')}</a></li>
-                <li> <a href="#servic">{t('li18')}</a></li>
+                <li> 
+                  <a 
+                  exact
+                  activeClassName="active"
+                  onClick={click ? handleClick : null}
+                  href="#servic" >
+                    {t('li16')}
+                    </a>
+                  </li>
+                <li>                   
+                 <a
+                  exact
+                  activeClassName="active"
+                  onClick={click ? handleClick : null}
+                  href="#servic" >
+                    {t('li17')}
+                    </a>
+                    </li>
+                <li>                   
+                  <a 
+                  exact
+                  activeClassName="active"
+                  onClick={click ? handleClick : null}
+                  href="#servic" >
+                    {t('li18')}
+                    </a>
+                  </li>
               </ul>
             </li>
             <li className="nav-item">
               <a
+              className="nav-links"
+              href="#konselariya"
+                
                 exact
-                href="#konselariya"
                 activeClassName="active"
-                className="nav-links"
                 onClick={click ? handleClick : null}
+                
               >
                 {t('li12')}
               </a>
@@ -98,6 +124,7 @@ function NavBar() {
                     exact
                     href="#servic"
                     activeClassName="active"
+                    onClick={click ? handleClick : null}
                   >
                     {t('li13')}
                   </a>
@@ -107,6 +134,7 @@ function NavBar() {
                     exact
                     href="#servic"
                     activeClassName="active"
+                    onClick={click ? handleClick : null}
                   >
                     {t('li14')}
                   </a>
@@ -116,6 +144,7 @@ function NavBar() {
                     exact
                     href="#servic"
                     activeClassName="active"
+                    onClick={click ? handleClick : null}
                   >
                     {t('li5')}
                   </a>
@@ -129,6 +158,7 @@ function NavBar() {
                     exact
                     href="#servic"
                     activeClassName="active"
+                    onClick={click ? handleClick : null}
                   >
                     {t('li16')}
                   </a>
@@ -138,15 +168,17 @@ function NavBar() {
                     exact
                     href="#konselariya"
                     activeClassName="active"
+                    onClick={click ? handleClick : null}
                   >
                     {t('li17')}
                   </a>
                 </li>
                 <li className='footer__link__list__item'>
                   <a
-                    exact
-                    href="#servic"
-                    activeClassName="active"
+                  href="#servic"
+                  exact  
+                  activeClassName="active"  
+                  onClick={click ? handleClick : null}
                   >
                     {t('li18')}
                   </a>
