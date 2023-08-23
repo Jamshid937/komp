@@ -179,6 +179,9 @@
   .nav-item_select__bar {
     display: block;
   }
+  .nav-item_select{
+  display: none;
+  }
   .nav-item__phone>a :first-child {
     display: none;
   }
@@ -234,6 +237,7 @@
     z-index: 1;
     padding-bottom: 20px;
     height: 100vh;
+    padding: 51px;
   }
 
   .nav-item .active {
@@ -242,8 +246,7 @@
   }
 
   .nav-links {
-    padding: 1.5rem;
-    display: table;
+    padding: 8px;
   }
 
   .nav-icon {
